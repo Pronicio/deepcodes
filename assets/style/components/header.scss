@@ -1,0 +1,40 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+
+  .navbar {
+    display: flex;
+    align-items: center;
+
+    a {
+      color: $sub-text;
+      text-decoration: none;
+      margin: 0 15px;
+
+      &:hover {
+        color: $text;
+      }
+    }
+
+    button {
+      margin: 0 15px;
+    }
+
+    .active {
+      color: $color;
+
+      &:hover {
+        color: $color;
+      }
+    }
+  }
+
+  h3 {
+    color: $text;
+    font-size: 2rem;
+    margin: 0;
+  }
+}
