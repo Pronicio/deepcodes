@@ -34,6 +34,10 @@ main {
   .bubble_2 {
     left: 65vw;
     top: 45vh;
+
+    @media (max-width: 1005px) {
+      display: none;
+    }
   }
 
   h1 {
@@ -60,6 +64,10 @@ main {
     cursor: pointer;
     position: absolute;
     bottom: 3%;
+
+    @media (max-width: 455px) {
+      display: none;
+    }
   }
 }
 
@@ -99,50 +107,47 @@ main {
   }
 
   .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .worker {
-      grid-area: 1 / 1 / 4 / 2;
-      position: relative;
-      left: 50%;
       border-radius: 18px;
     }
 
-    .c1 { grid-area: 1 / 2 / 2 / 3; }
-    .c2 { grid-area: 2 / 2 / 3 / 3; }
-    .c3 { grid-area: 3 / 2 / 4 / 3; }
+    .infos {
+      .card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
 
-    .card {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: center;
+        background: $color;
+        border-radius: 20px;
+        margin: 10px 2rem;
+        padding: 15px;
 
-      position: relative;
-      right: 13%;
+        img {
+          background: #F7F7FA;
+          box-shadow: 1px 6px 17px 7px rgba(0, 0, 0, 0.25);
+          border-radius: 18px;
+          width: 60px;
+          height: 60px;
+          padding: 20px;
+        }
 
-      background: $color;
-      border-radius: 20px;
-      margin: 10px 5rem;
-      padding: 15px;
-
-      img {
-        background: #F7F7FA;
-        box-shadow: 1px 6px 17px 7px rgba(0, 0, 0, 0.25);
-        border-radius: 18px;
-        width: 60px;
-        height: 60px;
-        padding: 20px;
+        p {
+          color: $text;
+          text-align: start;
+          margin-left: 1.4rem;
+          font-size: 1.3rem;
+          min-width: 22vw;
+        }
       }
+    }
 
-      p {
-        color: $text;
-        text-align: start;
-        margin-left: 1.4rem;
-        font-size: 1.3rem;
-      }
+    @media (max-width: 780px) {
+      flex-direction: column;
     }
   }
 }

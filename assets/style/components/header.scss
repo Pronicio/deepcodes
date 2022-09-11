@@ -12,7 +12,7 @@ nav {
     a {
       color: $sub-text;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 0 1vw;
 
       &:hover {
         color: $text;
@@ -30,11 +30,55 @@ nav {
         color: $color;
       }
     }
+
+    @media (max-width: 780px) {
+      display: none;
+    }
   }
 
   h3 {
     color: $text;
     font-size: 2rem;
     margin: 0;
+  }
+
+  .mobile_menu_btn {
+    background: url("@/assets/images/icons/menu.svg") no-repeat;
+    background-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+
+    padding: 14px;
+    display: none;
+
+    @media (max-width: 780px) {
+      display: block;
+    }
+  }
+}
+
+#mobile_menu.open {
+  display: flex;
+}
+
+#mobile_menu {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 8px;
+
+  display: none;
+  position: relative;
+  background: #10172a;
+
+  a {
+    color: #AEAFB8;
+    text-decoration: none;
+    margin: 1vw;
+  }
+
+  button {
+    margin: 1vw;
   }
 }

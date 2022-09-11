@@ -24,17 +24,19 @@
     <h3>Pourquoi DeepCodes ?</h3>
     <div class="grid">
       <img src="../assets/images/worker.png" alt="Worker" width="300" class="worker">
-      <div class="card c1">
-        <img src="../assets/images/icons/community.svg" alt="Community" width="80">
-        <p>Communauté axée<br>dévelopemment</p>
-      </div>
-      <div class="card c2">
-        <img src="../assets/images/icons/tools.svg" alt="Tools" width="80">
-        <p>Outils pour<br>développeurs</p>
-      </div>
-      <div class="card c3">
-        <img src="../assets/images/icons/schedule.svg" alt="Schedule" width="80">
-        <p>Supers évènements<br>avec cash prize</p>
+      <div class="infos">
+        <div class="card">
+          <img src="../assets/images/icons/community.svg" alt="Community" width="80">
+          <p>Communauté axée<br>dévelopemment</p>
+        </div>
+        <div class="card">
+          <img src="../assets/images/icons/tools.svg" alt="Tools" width="80">
+          <p>Outils pour<br>développeurs</p>
+        </div>
+        <div class="card">
+          <img src="../assets/images/icons/schedule.svg" alt="Schedule" width="80">
+          <p>Supers évènements<br>avec cash prize</p>
+        </div>
       </div>
     </div>
   </section>
