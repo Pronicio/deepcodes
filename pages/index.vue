@@ -64,10 +64,10 @@
     </div>
     <h4>Envie de nous soutenir? <a href="#">Faire un don</a></h4>
   </section>
+  <Footer/>
 </template>
 
 <style lang="scss">
 @import '../assets/style/style.scss';
 @import '../assets/style/pages/home.scss';
 </style>
-
