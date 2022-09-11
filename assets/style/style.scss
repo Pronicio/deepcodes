@@ -6,6 +6,10 @@ $sub-text: #AEAFB8;
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Rubik', sans-serif;
   font-weight: bold;

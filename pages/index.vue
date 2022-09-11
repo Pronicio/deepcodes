@@ -10,9 +10,9 @@
       francophone. Avec nous, vous trouverez votre comble.</p>
     <button>En savoir plus <img src="../assets/images/icons/arrow-right.svg" alt="En savoir plus" width="20"></button>
 
-    <div class="arrow_down"></div>
+    <div class="arrow_down" @click="scrollToNext"></div>
   </main>
-  <section class="about">
+  <section id="about">
     <h3>Qui sommes nous?</h3>
     <p>DeepCodes est une nouvelle communauté regroupant des passionnés d'informatique, de technologie mais surtout de
       développement de partout dans le monde. Notre but est de faire rayonner cette belle passion pour la faire
@@ -20,7 +20,7 @@
       nous avons des salons d'entraide sur notre Discord ainsi que tes outils pour les développeurs gratuits!</p>
     <button>Nos outils <img src="../assets/images/icons/arrow-right.svg" alt="En savoir plus" width="20"></button>
   </section>
-  <section class="why">
+  <section id="why">
     <h3>Pourquoi DeepCodes ?</h3>
     <div class="grid">
       <img src="../assets/images/worker.png" alt="Worker" width="300" class="worker">
@@ -40,7 +40,7 @@
       </div>
     </div>
   </section>
-  <section class="donators">
+  <section id="donators">
     <h3>Nos donateurs :</h3>
     <div class="podium">
       <div class="classement first">
@@ -66,6 +66,12 @@
   </section>
   <Footer/>
 </template>
+
+<script setup>
+function scrollToNext() {
+  document.getElementById('about').scrollIntoView();
+}
+</script>
 
 <style lang="scss">
 @import '../assets/style/style.scss';
