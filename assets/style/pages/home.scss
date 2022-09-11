@@ -189,6 +189,7 @@ main {
     padding: 12px;
     border-radius: 8px;
     margin-top: 5vh;
+    min-width: 20rem;
 
     h5 {
       color: $text;
@@ -201,6 +202,7 @@ main {
       width: 20vw;
       margin: 8px;
       border-radius: 8px;
+      min-width: 20rem;
 
       .container {
         background: #13EF00;
@@ -208,6 +210,12 @@ main {
         text-align: start;
         text-indent: 10px;
       }
+    }
+
+    @media (max-width: 381px) {
+      min-width: 0;
+
+      .progress_bar { min-width: 0 }
     }
   }
 
