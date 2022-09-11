@@ -40,6 +40,30 @@
       </div>
     </div>
   </section>
+  <section class="donators">
+    <h3>Nos donateurs :</h3>
+    <div class="podium">
+      <div class="classement first">
+        <img src="../assets/images/podium/1.svg" alt="1er">
+        <h4>Someone...</h4>
+      </div>
+      <div class="classement second">
+        <img src="../assets/images/podium/2.svg" alt="2eme">
+        <h4>Someone...</h4>
+      </div>
+      <div class="classement third">
+        <img src="../assets/images/podium/3.svg" alt="3eme">
+        <h4>Someone...</h4>
+      </div>
+    </div>
+    <div class="goal">
+      <h5>Montant Total:</h5>
+      <div class="progress_bar">
+        <div class="container" style="width:70%">70% (179,63$ CAD)</div>
+      </div>
+    </div>
+    <h4>Envie de nous soutenir? <a href="#">Faire un don</a></h4>
+  </section>
 </template>
 
 <style lang="scss">
