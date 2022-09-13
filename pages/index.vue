@@ -68,6 +68,10 @@
 </template>
 
 <script setup>
+useMeta({
+  title: 'DeepCodes - Home'
+})
+
 function scrollToNext() {
   document.getElementById('about').scrollIntoView();
 }
@@ -75,5 +79,8 @@ function scrollToNext() {
 
 <style lang="scss">
 @import '../assets/style/style.scss';
+</style>
+
+<style scoped lang="scss">
 @import '../assets/style/pages/home.scss';
 </style>
