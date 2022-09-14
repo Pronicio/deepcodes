@@ -1,7 +1,70 @@
 main {
-  height: 96vh;
-
-  padding: 14vh 8vw;
+  padding: 12vh 8vw;
   background: rgba(200, 199, 255, 0.7);
   backdrop-filter: blur(300px);
+  text-align: center;
+
+  h1 {
+    margin: 0;
+    font-size: 3.3rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: 8px 0 10vh;
+  }
+
+  .tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      background: #D9D9D9;
+      border-radius: 20px;
+      padding: 1rem;
+      margin-bottom: 10vh;
+
+      img {
+        border-radius: 20px;
+        width: 77vw;
+        max-width: 675px;
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        margin: 10px;
+
+        h4, h3, p, a {
+          margin: 5px 0;
+        }
+
+        h4, h3 {
+          font-size: 1.3rem;
+        }
+
+        h4 {
+          text-transform: uppercase;
+          color: $color;
+        }
+
+        p {
+          color: #717279;
+          font-size: 1rem;
+        }
+
+        a {
+          color: $color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
