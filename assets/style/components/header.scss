@@ -78,6 +78,14 @@ nav {
     margin: 1vw;
   }
 
+  .active {
+    color: $color;
+
+    &:hover {
+      color: $color;
+    }
+  }
+
   button {
     margin: 1vw;
   }

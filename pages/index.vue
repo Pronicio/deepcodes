@@ -83,6 +83,5 @@ function scrollToNext() {
 
 
 <style scoped lang="scss">
-@import '../assets/style/style.scss';
 @import '../assets/style/pages/home.scss';
 </style>

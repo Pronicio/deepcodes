@@ -36,7 +36,11 @@ useMeta({
 })
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 @import '../assets/style/style.scss';
+</style>
+
+
+<style scoped lang="scss">
 @import '../assets/style/pages/tools.scss';
 </style>
