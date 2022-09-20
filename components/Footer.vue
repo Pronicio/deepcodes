@@ -8,8 +8,8 @@
       <div class="links">
         <div class="link_section">
           <h6>Liens Utiles</h6>
-          <a href="#">Notre Équipe</a>
-          <a href="#">Nos Outils</a>
+          <a href="/teams">Notre Équipe</a>
+          <a href="/tools">Nos Outils</a>
           <a href="#">Partenaires</a>
         </div>
         <div class="link_section">

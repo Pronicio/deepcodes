@@ -1,5 +1,5 @@
 main {
-  padding: 12vh 8vw;
+  padding: 12vh 8vw 1vh 8vw;
   background: rgba(200, 199, 255, 0.7);
   backdrop-filter: blur(150px);
   text-align: center;
@@ -22,10 +22,21 @@ main {
     align-items: center;
 
     .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+
+      margin: 0 10vw 10vh 0;
+
+      &:last-of-type {
+        margin: 0 0 10vh 0;
+      }
 
       img {
         width: 20vw;
-        max-width: 400px;
+        max-width: 250px;
+        min-width: 150px;
         border-radius: 20px;
       }
 
@@ -40,8 +51,36 @@ main {
       }
 
       .socials {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-top: 4vh;
 
         .social {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .icon {
+            width: 2rem;
+            height: 2rem;
+            margin-right: 10px;
+          }
+
+          .instagram {
+            background: url("@/assets/images/icons/socials/instagram.png") no-repeat;
+            background-size: 2.5rem;
+          }
+
+          .discord {
+            background: url("@/assets/images/icons/socials/discord.png") no-repeat;
+            background-size: 2.5rem;
+          }
+
+          .youtube {
+            background: url("@/assets/images/icons/socials/youtube.png") no-repeat;
+            background-size: 2.5rem;
+          }
 
           p {
             margin: 0;

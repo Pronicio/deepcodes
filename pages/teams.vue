@@ -24,6 +24,25 @@
           </div>
         </div>
       </div>
+      <div class="card">
+        <img src="../assets/images/team/Flaym3r.png" alt="Flaym3r" width="300">
+        <h3>Flaym3r</h3>
+        <h4>Fondateur</h4>
+        <div class="socials">
+          <div class="social">
+            <div class="icon instagram"></div>
+            <p>@flaym3r_qc</p>
+          </div>
+          <div class="social">
+            <div class="icon discord"></div>
+            <p>Flaym3r#0007</p>
+          </div>
+          <div class="social">
+            <div class="icon youtube"></div>
+            <p>Team Kebec</p>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
   <Footer/>
