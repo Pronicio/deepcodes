@@ -7,20 +7,21 @@
 
     <div class="form">
       <img src="../assets/images/logo.png" alt="DeepCodes's logo" width="70">
-      <h1>Connexion</h1>
+      <h1>S’inscrire</h1>
       <form v-on:submit.prevent="login">
         <input v-model="email" type="email" name="email" id="email" placeholder="Email" required>
+        <input v-model="name" type="text" name="text" id="text" placeholder="Pseudo" required>
         <input v-model="password" type="password" name="password" id="password" placeholder="Mot de passe" required>
         <p>Problèmes de connexion?</p>
 
-        <button type="submit">Se connecter <img src="../assets/images/icons/arrow-right.svg" alt="En savoir plus" width="20"></button>
+        <button type="submit">S’inscrire <img src="../assets/images/icons/arrow-right.svg" alt="En savoir plus" width="20"></button>
       </form>
     </div>
     <div class="oauth">
       <div class="icon discord"></div>
       <div class="icon google"></div>
     </div>
-    <p>Pas de compte ? <b @click="toSignUpPage">S’inscrire</b></p>
+    <p>Déjà un compte ? <b @click="toLoginPage">Se connecter</b></p>
   </main>
   <Footer/>
 </template>
@@ -33,14 +34,15 @@ useMeta({
 })
 
 const email = ref();
+const name = ref();
 const password = ref();
 
 const login = () => {
-  console.log(email.value, password.value)
+  console.log(email.value, name.value, password.value)
 }
 
-function toSignUpPage() {
-  window.location.href = window.location.origin + "/signup"
+function toLoginPage() {
+  window.location.href = window.location.origin + "/login"
 }
 </script>
 

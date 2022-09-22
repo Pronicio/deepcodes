@@ -10,7 +10,7 @@
     <div class="navbar">
       <a href="/tools" :class="isRouteActive('tools') ? 'active' : ''">Nos outils</a>
       <a href="/" :class="isRouteActive('contact') ? 'active' : ''">Contact</a>
-      <button>Se connecter</button>
+      <button @click="toLoginPage">Se connecter</button>
     </div>
   </nav>
   <div id="mobile_menu">
@@ -19,7 +19,7 @@
     <a href="/teams" :class="isRouteActive('teams') ? 'active' : ''">Notre Équipe</a>
     <a href="/tools" :class="isRouteActive('tools') ? 'active' : ''">Nos outils</a>
     <a href="/" :class="isRouteActive('contact') ? 'active' : ''">Contact</a>
-    <button>Se connecter</button>
+    <button @click="toLoginPage">Se connecter</button>
   </div>
 </template>
 
@@ -32,6 +32,9 @@ function toggleMobileMenu() {
 }
 function isRouteActive(name) {
   return route.name === name
+}
+function toLoginPage() {
+  window.location.href = window.location.origin + "/login"
 }
 </script>
 
