@@ -9,7 +9,7 @@
     <button class="mobile_menu_btn" @click="toggleMobileMenu"></button>
     <div class="navbar">
       <a href="/tools" :class="isRouteActive('tools') ? 'active' : ''">Nos outils</a>
-      <a href="/" :class="isRouteActive('contact') ? 'active' : ''">Contact</a>
+      <a href="/contact" :class="isRouteActive('contact') ? 'active' : ''">Contact</a>
       <button @click="toLoginPage">Se connecter</button>
     </div>
   </nav>
@@ -18,7 +18,7 @@
     <a href="/" :class="isRouteActive('about') ? 'active' : ''">À Propos</a>
     <a href="/teams" :class="isRouteActive('teams') ? 'active' : ''">Notre Équipe</a>
     <a href="/tools" :class="isRouteActive('tools') ? 'active' : ''">Nos outils</a>
-    <a href="/" :class="isRouteActive('contact') ? 'active' : ''">Contact</a>
+    <a href="/contact" :class="isRouteActive('contact') ? 'active' : ''">Contact</a>
     <button @click="toLoginPage">Se connecter</button>
   </div>
 </template>

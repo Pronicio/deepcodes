@@ -30,7 +30,7 @@
 import { ref } from 'vue';
 
 useMeta({
-  title: 'DeepCodes - Login'
+  title: 'DeepCodes - Signup'
 })
 
 const email = ref();
