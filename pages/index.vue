@@ -8,7 +8,7 @@
     <h1>Le codage <b>n'a pas de<br> secrets pour nous.</b></h1>
     <p>Nous sommes des pionniers dans le niveau du dévelopemment<br>
       francophone. Avec nous, vous trouverez votre comble.</p>
-    <button>En savoir plus <img src="../assets/images/icons/arrow-right.svg" alt="En savoir plus" width="20"></button>
+    <button>En savoir plus</button>
 
     <div class="arrow_down" @click="scrollToNext"></div>
   </main>
@@ -18,7 +18,7 @@
       développement de partout dans le monde. Notre but est de faire rayonner cette belle passion pour la faire
       connaître aux autres. Nous voulons aussi fournir un endroit où l'on peut parler de ce domaine facilement. De plus,
       nous avons des salons d'entraide sur notre Discord ainsi que tes outils pour les développeurs gratuits!</p>
-    <button>Nos outils <img src="../assets/images/icons/arrow-right.svg" alt="En savoir plus" width="20"></button>
+    <button>Nos outils</button>
   </section>
   <section id="why">
     <h3>Pourquoi DeepCodes ?</h3>

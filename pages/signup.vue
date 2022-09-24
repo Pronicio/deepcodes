@@ -14,7 +14,7 @@
         <input v-model="password" type="password" name="password" id="password" placeholder="Mot de passe" required>
         <p>Problèmes de connexion?</p>
 
-        <button type="submit">S’inscrire <img src="../assets/images/icons/arrow-right.svg" alt="En savoir plus" width="20"></button>
+        <button type="submit">S’inscrire</button>
       </form>
     </div>
     <div class="oauth">

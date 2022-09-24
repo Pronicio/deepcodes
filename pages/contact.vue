@@ -10,9 +10,9 @@
       <h1>Nous contacter</h1>
       <form v-on:submit.prevent="sendMessage">
         <input v-model="email" type="email" name="email" id="email" placeholder="Email" required>
-        <textarea v-model="message" id="story" name="story" rows="5" cols="33" placeholder="Message..."></textarea>
+        <textarea v-model="message" id="story" name="story" rows="5" cols="33" placeholder="Message..." required></textarea>
 
-        <button type="submit">Se connecter <img src="../assets/images/icons/arrow-right.svg" alt="En savoir plus" width="20"></button>
+        <button type="submit">Envoyer</button>
       </form>
     </div>
   </main>

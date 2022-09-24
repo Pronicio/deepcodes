@@ -19,10 +19,6 @@ body {
 }
 
 button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
   background: $color;
   font-family: 'Rubik', sans-serif;
   color: $text;
@@ -30,10 +26,6 @@ button {
   padding: 8px;
   border: none;
   border-radius: 5px;
-
-  img {
-    margin: 2px 0 1px 3px;
-  }
 }
 
 b {
