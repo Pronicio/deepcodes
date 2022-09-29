@@ -20,5 +20,8 @@ export default defineNuxtConfig({
                 '@': path.resolve(__dirname),
             }
         }
+    },
+    publicRuntimeConfig: {
+        api_url: 'http://localhost:9000'
     }
 })

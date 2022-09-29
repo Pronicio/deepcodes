@@ -1,0 +1,20 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "back/dev": "nodemon ."
+  },
+  "author": "Pronicio",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@fastify/cors": "^8.1.0",
+    "@fastify/jwt": "^6.3.2",
+    "argon2": "^0.29.1",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.6.0",
+    "mongoose": "^6.6.2"
+  }
+}
