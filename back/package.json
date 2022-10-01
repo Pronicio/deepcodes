@@ -13,6 +13,7 @@
     "@fastify/cors": "^8.1.0",
     "@fastify/jwt": "^6.3.2",
     "argon2": "^0.29.1",
+    "axios": "^0.27.2",
     "dotenv": "^16.0.3",
     "fastify": "^4.6.0",
     "mongoose": "^6.6.2"

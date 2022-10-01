@@ -22,6 +22,7 @@ export default defineNuxtConfig({
         }
     },
     publicRuntimeConfig: {
-        api_url: 'http://localhost:9000'
+        api_url: 'http://localhost:9000',
+        discord_oauth: 'https://discord.com/api/oauth2/authorize?client_id=672124739421995010&redirect_uri=http%3A%2F%2Flocalhost%3A9000%2Fauth%2Fdiscord&response_type=code&scope=identify%20email'
     }
 })

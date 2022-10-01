@@ -32,7 +32,7 @@ fastify.get('/', async function (req, rep) {
     })
 })
 
-fastify.register(userRoute, { prefix: 'user' })
+fastify.register(userRoute, { prefix: 'auth' })
 
 fastify.listen({ port: process.env.PORT, host: "0.0.0.0" }, (err, address) => {
     if (err) {

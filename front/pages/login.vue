@@ -17,7 +17,7 @@
       </form>
     </div>
     <div class="oauth">
-      <div class="icon discord"></div>
+      <div class="icon discord" @click="discord"></div>
       <div class="icon google"></div>
     </div>
     <p>Pas de compte ? <b @click="toSignUpPage">S’inscrire</b></p>
@@ -38,7 +38,7 @@ const email = ref();
 const password = ref();
 
 const login = async () => {
-  const res = await fetch(`${config.public.api_url}/user/login`, {
+  const res = await fetch(`${config.public.api_url}/auth/login`, {
     method: 'POST',
     body: JSON.stringify({
       email: email.value,
@@ -53,6 +53,10 @@ const login = async () => {
     localStorage.setItem("username", data.username)
     window.location.href = window.location.origin
   }
+}
+
+const discord = () => {
+  window.location.href =config.public.discord_oauth
 }
 
 function toSignUpPage() {

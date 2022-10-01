@@ -68,8 +68,30 @@
 </template>
 
 <script setup>
+import { onMounted } from 'vue'
+const route = useRoute()
+const config = useRuntimeConfig()
+
 useMeta({
   title: 'DeepCodes - Home'
+})
+
+onMounted(async () => {
+  if (route.query.token) {
+    localStorage.setItem("token", route.query.token)
+
+    const res = await fetch(`${config.public.api_url}/auth/info`, {
+      method: 'POST',
+      body: JSON.stringify({
+        token: route.query.token
+      })
+    })
+
+    const data = await res.json();
+
+    localStorage.setItem("username", data.username)
+    window.location.href = window.location.origin
+  }
 })
 
 function scrollToNext() {
