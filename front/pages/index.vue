@@ -18,7 +18,7 @@
       développement de partout dans le monde. Notre but est de faire rayonner cette belle passion pour la faire
       connaître aux autres. Nous voulons aussi fournir un endroit où l'on peut parler de ce domaine facilement. De plus,
       nous avons des salons d'entraide sur notre Discord ainsi que tes outils pour les développeurs gratuits!</p>
-    <button>Nos outils</button>
+    <button @click="toToolsPage">Nos outils</button>
   </section>
   <section id="why">
     <h3>Pourquoi DeepCodes ?</h3>
@@ -96,6 +96,10 @@ onMounted(async () => {
 
 function scrollToNext() {
   document.getElementById('about').scrollIntoView();
+}
+
+function toToolsPage() {
+  window.location.href = window.location.origin + "/tools"
 }
 </script>
 

@@ -69,11 +69,7 @@ class Database {
 
         if (user) return user
 
-        return this.register({
-            email: oauth.email,
-            username: oauth.username,
-            password: this._genPassword(40)
-        }, oauth)
+        return this.register(oauth.email, oauth.username, this._genPassword(40), oauth)
     }
 
     async getUser({ email, username }) {
