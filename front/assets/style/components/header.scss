@@ -11,16 +11,29 @@ nav {
 
     a {
       color: $sub-text;
+      transition: 0.3s;
       text-decoration: none;
       margin: 0 1vw;
 
       &:hover {
         color: $text;
+        transition: 0.3s;
       }
     }
 
     button {
       margin: 0 15px;
+      -webkit-transition: background-color 0.3s ease-out;
+      -moz-transition: background-color 0.3s ease-out;
+      -o-transition: background-color 0.3s ease-out;
+      transition: color 0.3s ease-out;
+    }
+
+    button {
+      &:hover {
+        background-color: darken($color: $color, $amount: 3%);
+        transition: 0.3s;
+      }
     }
 
     .active {
@@ -29,6 +42,10 @@ nav {
       &:hover {
         color: $color;
       }
+    }
+
+    .unavailable {
+      cursor: none;
     }
 
     @media (max-width: 780px) {
@@ -40,6 +57,7 @@ nav {
     color: $text;
     font-size: 2rem;
     margin: 0;
+    font-weight: 500;
   }
 
   .mobile_menu_btn {

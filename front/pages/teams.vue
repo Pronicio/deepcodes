@@ -1,4 +1,5 @@
 <template>
+  <div>
   <Header/>
   <main>
     <h1>Notre Équipe</h1>
@@ -7,20 +8,16 @@
     <div class="team">
       <div class="card">
         <img src="../assets/images/team/Aigle.png" alt="Aigle Noir" width="300">
-        <h3>Aigle Noir</h3>
+        <h3>Artix</h3>
         <h4>Fondateur</h4>
         <div class="socials">
-          <div class="social">
-            <div class="icon instagram"></div>
-            <p>@maxime.mssctt</p>
-          </div>
           <div class="social">
             <div class="icon discord"></div>
             <p>Aigle Noir#2022</p>
           </div>
           <div class="social">
-            <div class="icon youtube"></div>
-            <p>Aigle Noir</p>
+            <div class="icon globe"></div>
+            <p href="https://artiix.me">https://artiix.me</p>
           </div>
         </div>
       </div>
@@ -46,11 +43,12 @@
     </div>
   </main>
   <Footer/>
+</div>
 </template>
 
 <script setup>
 useMeta({
-  title: 'DeepCodes - Teams'
+  title: 'DeepCodes - Notre équipe'
 })
 </script>
 

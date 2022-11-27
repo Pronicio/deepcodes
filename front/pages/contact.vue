@@ -1,4 +1,5 @@
 <template>
+  <div>
   <Header/>
   <main>
     <div class="filter"></div>
@@ -17,6 +18,7 @@
     </div>
   </main>
   <Footer/>
+</div>
 </template>
 
 <script setup>

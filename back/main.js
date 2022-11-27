@@ -11,7 +11,7 @@ const fastify = Fastify({
 })
 
 fastify.register(CORS, {
-    origin: process.env.ORIGIN,
+    origin: "http://localhost:3000",
     methods: [ 'GET', 'POST' ],
     credentials: true
 });

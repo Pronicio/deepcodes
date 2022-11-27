@@ -1,5 +1,5 @@
 main {
-  padding: 12vh 8vw 1vh 8vw;
+  padding: 9vh 8vw 1vh 8vw;
   background: rgba(200, 199, 255, 0.7);
   backdrop-filter: blur(150px);
   text-align: center;
@@ -76,6 +76,11 @@ main {
             background: url("@/assets/images/icons/socials/discord.png") no-repeat;
             background-size: 2.5rem;
           }
+          
+          .globe {
+            background: url("@/assets/images/icons/socials/globe.png") no-repeat;
+            background-size: 2.5rem;
+          }
 
           .youtube {
             background: url("@/assets/images/icons/socials/youtube.png") no-repeat;
@@ -86,6 +91,7 @@ main {
             margin: 0;
             font-size: 1rem;
           }
+          
         }
       }
     }

@@ -1,10 +1,12 @@
 $color: #3D31E3;
+$gray: #191A1B;
 $back: #10172A;
 
 $text: #FFFFFF;
 $sub-text: #AEAFB8;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -12,7 +14,7 @@ html {
 
 body {
   font-family: 'Rubik', sans-serif;
-  font-weight: bold;
+  font-weight: 400;
   margin: 0;
   background: $back;
   overflow-x: hidden;
@@ -23,13 +25,14 @@ button {
   font-family: 'Rubik', sans-serif;
   color: $text;
   cursor: pointer;
-  padding: 8px;
+  padding: 9px 14px;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 b {
   color: $color;
+  font-weight: semibold;
 }
 
 ::-webkit-scrollbar {
@@ -38,7 +41,7 @@ b {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $text;
+  background: $color;
   border-radius: 4px;
 }
 

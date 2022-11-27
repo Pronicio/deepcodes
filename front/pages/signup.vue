@@ -1,4 +1,5 @@
 <template>
+  <div>
   <Header/>
   <main>
     <div class="filter"></div>
@@ -19,11 +20,11 @@
     </div>
     <div class="oauth">
       <div class="icon discord" @click="discord"></div>
-      <div class="icon google"></div>
     </div>
     <p>Déjà un compte ? <b @click="toLoginPage">Se connecter</b></p>
   </main>
   <Footer/>
+</div>
 </template>
 
 <script setup>

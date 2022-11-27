@@ -15,10 +15,17 @@ footer {
 
       h5 {
         font-size: 2rem;
+        font-weight: 500;
       }
 
       h6 {
         font-size: 1.2rem;
+        font-weight: 400;
+      }
+
+      b {
+        font-size: 1.2rem;
+        font-weight: 500;
       }
     }
 
@@ -40,6 +47,7 @@ footer {
 
         a {
           color: $sub-text;
+          transition: 0.3s;
           text-decoration: none;
           font-weight: normal;
           margin: 4px 0;
@@ -68,7 +76,7 @@ footer {
   .separator {
     margin: 4rem 0;
     border: 1px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 6px rgba(255, 255, 255, 0.25);
+    //box-shadow: 0 0 6px rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(50px);
   }
 
@@ -80,6 +88,11 @@ footer {
     p {
       color: $sub-text;
       margin: 0;
+      font-weight: 300;
+
+      img {
+        width: 8%;
+      }
 
       i {
         color: red;
@@ -87,10 +100,20 @@ footer {
       }
 
       a {
+        -webkit-transition: color 0.3s ease-out;
+        transition: color 0.3s ease-out;
+      }
+
+      a {
         color: $color;
         text-decoration: none;
+        font-weight: 500;
+
+        &:hover {
+          color: darken($color: $color, $amount: 3%);
+          transition: 0.3s;
+        }
       }
-    }
 
     @media (max-width: 955px) {
       display: block;
@@ -105,4 +128,5 @@ footer {
   @media (max-width: 455px) {
     margin: 1rem;
   }
+}
 }

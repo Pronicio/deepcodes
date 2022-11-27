@@ -25,6 +25,7 @@ main {
     z-index: -5;
     background: $color;
     border-radius: 50%;
+    opacity: 55%;
   }
 
   .bubble_1 {
@@ -44,7 +45,9 @@ main {
   h1 {
     color: $text;
     margin: 0;
-    font-size: 3.3rem;
+    font-size: 60px;
+    font-weight: semibold;
+    line-height:65px;
   }
 
   p {
@@ -78,13 +81,15 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-weight: 500;
+  color: $gray;
 
   background: rgba(200, 199, 255, 0.7);
   backdrop-filter: blur(300px);
-  padding: 15vh 13vw;
+  padding: 15vh 25vw;
 
   h3 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin: 12px 0 30px;
   }
 
@@ -97,14 +102,29 @@ main {
   }
 }
 
+button {
+  margin: 1vw;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+button {
+  &:hover {
+    background-color: darken($color: $color, $amount: 3%);
+    transition: 0.3s;
+  }
+}
+
+
 #why {
-  background: #10172A;
-  padding: 6vh 3vw;
+  background: #10172a;
+  padding: 12vh 3vw;
   text-align: center;
+  font-weight: 500;
 
   h3 {
     color: $text;
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .grid {
@@ -157,6 +177,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: $gray;
 
   text-align: center;
   padding: 3rem;
@@ -165,17 +186,24 @@ main {
   backdrop-filter: blur(300px);
 
   h3 {
-    font-size: 2rem;
-    margin: 12px 0 30px;
+    font-size: 2.2rem;
+    margin: 12px 0 50px;
   }
 
   .podium {
     .classement {
       display: flex;
       align-items: center;
+      text-align: left;
 
       h4 {
         margin: 0;
+        font-weight: semibold;
+        font-size: 1.5rem;
+      }
+      small {
+        margin: 0;
+        font-weight: 500;
         font-size: 1.5rem;
       }
     }
@@ -187,7 +215,7 @@ main {
     align-items: center;
 
     background: $color;
-    padding: 12px;
+    padding: 15px;
     border-radius: 8px;
     margin-top: 5vh;
     min-width: 20rem;
@@ -196,14 +224,18 @@ main {
       color: $text;
       margin: 0;
       font-size: 1.2rem;
+      font-weight: 500;
     }
 
     .progress_bar {
       background: #FFFFFF;
+      outline: solid;
+      outline-color: #F7F7FA;
       width: 20vw;
       margin: 8px;
       border-radius: 8px;
       min-width: 20rem;
+      font-weight: 600;
 
       .container {
         background: #13EF00;
@@ -222,12 +254,23 @@ main {
 
   h4 {
     font-size: 1.5rem;
-    margin: 7vh 0 0;
+    margin: 2vh 0 0;
+    font-weight: 600;
+
+    a {
+      -webkit-transition: color 0.3s ease-out;
+      transition: color 0.3s ease-out;
+    }
 
     a {
       color: $color;
       text-decoration: none;
       cursor: pointer;
+      
+      &:hover {
+        color: darken($color: $color, $amount: 3%);
+        transition: 0.3s;
+      }
     }
   }
 }

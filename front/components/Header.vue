@@ -2,27 +2,28 @@
   <nav>
     <div class="navbar">
       <a href="/" :class="isRouteActive('index') ? 'active' : ''">Accueil</a>
-      <a href="/" :class="isRouteActive('about') ? 'active' : ''">À Propos</a>
+      <a href="/#about" :class="isRouteActive('about') ? 'active' : ''">À Propos</a>
       <a href="/teams" :class="isRouteActive('teams') ? 'active' : ''">Notre Équipe</a>
     </div>
     <h3>DeepCodes</h3>
     <button class="mobile_menu_btn" @click="toggleMobileMenu"></button>
     <div class="navbar">
-      <a href="/tools" :class="isRouteActive('tools') ? 'active' : ''">Nos outils</a>
-      <a href="/contact" :class="isRouteActive('contact') ? 'active' : ''">Contact</a>
-      <button @click="toLoginPage" v-if="!username">Se connecter</button>
+      <a href="/tools" :class="isRouteActive('tools') ? 'active' : ''">Outils</a>
+      <a href="/partners" :class="isRouteActive('partners') ? 'active' : ''">Partenaires</a>
+      <button style="cursor:not-allowed" v-if="!username">Se connecter</button>
       <button @click="logout" v-else>{{ username }}</button>
     </div>
-  </nav>
-  <div id="mobile_menu">
+    <div id="mobile_menu">
     <a href="/" :class="isRouteActive('index') ? 'active' : ''">Accueil</a>
     <a href="/" :class="isRouteActive('about') ? 'active' : ''">À Propos</a>
     <a href="/teams" :class="isRouteActive('teams') ? 'active' : ''">Notre Équipe</a>
     <a href="/tools" :class="isRouteActive('tools') ? 'active' : ''">Nos outils</a>
     <a href="/contact" :class="isRouteActive('contact') ? 'active' : ''">Contact</a>
-    <button @click="toLoginPage" v-if="!username">Se connecter</button>
+    
+    <button style="cursor:not-allowed" v-if="!username">Se connecter (❌)</button>
     <button @click="logout" v-else>{{ username }}</button>
   </div>
+  </nav>
 </template>
 
 <script setup>
