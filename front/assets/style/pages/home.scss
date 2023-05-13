@@ -86,7 +86,7 @@ main {
 
   background: rgba(200, 199, 255, 0.7);
   backdrop-filter: blur(300px);
-  padding: 15vh 25vw;
+  padding: 15vh 13vw;
 
   h3 {
     font-size: 2.2rem;
@@ -266,7 +266,7 @@ button {
       color: $color;
       text-decoration: none;
       cursor: pointer;
-      
+
       &:hover {
         color: darken($color: $color, $amount: 3%);
         transition: 0.3s;
